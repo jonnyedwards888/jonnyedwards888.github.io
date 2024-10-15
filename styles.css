@@ -1,0 +1,321 @@
+
+.header-container{
+    font-size: 2vw;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Vampire Bats', sans-serif;
+    
+  
+    
+}
+
+
+
+.handjet-font {
+  font-family: "Handjet", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "ELGR" 1,
+    "ELSH" 2;
+}
+
+.dela-gothic-one-regular {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-img {
+  height: 20rem;
+  width: 20rem;
+}
+
+ 
+
+#glowing-border {
+  border: 3px solid white; /* Initial border */
+   /* 2 seconds for a full cycle, repeat infinitely */
+  border-radius: 10px; /* Optional: to make the corners rounded */
+}
+
+.ape-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+html {
+  cursor: url('small-blunt-gif.gif') 16 16, auto;
+    
+}
+
+.background-image {
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    
+}
+
+.flame {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1.5vw;
+
+}
+
+.flame-left {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1.5vw;
+
+}
+
+
+  body {
+    
+    background-image: url(ninja\ scroll.gif);
+  }
+
+  .RNS-paragraph {
+    font-size: 4rem;
+    color:red;
+    
+
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .bullet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url('bullet.png') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    animation: fadeOut 1s ease-out forwards;
+  }
+  
+  
+
+  @keyframes glow {
+    0% {
+        border-color: white;
+        box-shadow: 0 0 10px white;
+    }
+    50% {
+        border-color: red;
+        box-shadow: 0 0 20px red;
+    }
+    100% {
+        border-color: white;
+        box-shadow: 0 0 10px white;
+    }
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 1rem;
+  padding: 20px;
+}
+
+.button-img-container-img {
+  cursor: pointer; /* Ensure cursor changes to pointer */
+  display: block; /* Ensure the image takes up space */
+  width: 100px; /* Set a width for demonstration */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Optional: add a smooth hover effect */
+}
+
+.button-img-container:hover {
+  transform: scale(1.1); /* Optional: scale up the image on hover */
+  cursor: pointer;
+ 
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+
+.glock {
+  height: 1rem;
+  width: 1rem;
+  padding: 0.2rem;
+}
+
+.purple-glock {
+  height: 1rem;
+  width: 1rem;
+}
+
+.content {
+  position: relative;
+  font-size: 24px;
+  margin: 100px;
+}
+
+.highlight {
+  color: red; /* Highlight the word "you" */
+  font-weight: bold;
+}
+
+/* Style for the pointing finger image */
+.finger {
+  
+  bottom: 1vw;
+    /* Initially hidden off the left of the screen */
+  width: 35px;
+ 
+  
+  
+  height: auto;
+  animation: flyAcross 4s ease-in-out;
+  animation-fill-mode: forwards; /* Keeps it out of view after animation */
+  top: 23vw;
+}
+
+.finger-container {
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+@keyframes flyAcross {
+
+   0% {
+  
+   transform: translateX(-100vw); /* Start off the left side of the screen */
+  
+   }
+  
+   25% {
+  
+   transform: translateX(47.5vw); /* Arrives under "you" */
+  
+   }
+  
+   50% {
+  
+   transform: translateX(47.5vw); /* Pauses under the word for a moment */
+  
+   }
+  
+   75% {
+  
+   transform: translateX(47.5vw); /* Moves to the right, leaving the screen */
+  
+   }
+  
+   100% {
+  
+   transform: translateX(47.5vw); /* Off the right side of the screen */
+  
+   }
+  
+  }
+  
+  
+/* Define the animation using keyframes */
+
+
+
+.music {
+  display: flex;
+  justify-content: center; /* Horizontally center the iframe */
+  align-items: center; /* Vertically center the iframe */
+  margin-bottom: 100px;
+  
+}
+
+iframe {
+  height: 5.5rem;
+  width: 25rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  
+  height: 100vh;
+  width: 100vw;
+  position: relative; /* Enable absolute positioning of the images */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: auto; /* Show vertical scrollbar if needed */
+}
+
+/* Style for the dynamically created images */
+.floating-image {
+  position: absolute;
+  width: 200px; /* Larger size for the images */
+  height: 190px; /* Larger size for the images */
+  pointer-events: none; /* Don't allow interaction with the image */
+  opacity: 0;
+  transition: opacity 2s ease-out, transform 2s ease-out; /* Slower transition */
+  animation: fadeInOut 2s forwards; /* Slower animation */
+}
+
+.moving-text-container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
+
+  gap: 2vw; /* Consistent gap */
+  display: flex;
+}
+
+.moving-text-container ul {
+  list-style: none;
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  
+
+  gap: 2vw; /* Consistent spacing between items */
+  margin: 0; /* Remove potential margins */
+  padding: 0; /* Remove potential padding */
+  
+  animation: scroll linear 10s infinite;
+}
+
+.moving-text-container ul li {
+  display: inline-block;
+  margin: 0; /* Remove any extra margins */
+  padding: 0; /* Remove any extra padding */
+}
+
+/* Keyframes for scrolling */
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 2vw)); /* Ensure animation accounts for the gap */
+  }
+}
