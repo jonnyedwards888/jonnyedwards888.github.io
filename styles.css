@@ -1,6 +1,6 @@
 
 .header-container{
-    font-size: 2vw;
+    font-size: 1.6vw;
     text-align:center;
     display: flex;
     flex-direction: row;
@@ -11,6 +11,12 @@
     
 }
 
+@font-face {
+  font-family: 'Knockout Sumo';
+  src: url('./fonts/Knockout-HT54F-Sumo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 .handjet-font {
@@ -74,14 +80,14 @@ body {
 .flame {
     height: 4rem;
     width: 4rem;
-    margin-top: 1.5vw;
+    margin-top: 1vw;
 
 }
 
 .flame-left {
     height: 4rem;
     width: 4rem;
-    margin-top: 1.5vw;
+    margin-top: 1vw;
 
 }
 
